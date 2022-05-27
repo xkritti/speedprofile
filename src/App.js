@@ -14,12 +14,12 @@ function App() {
         <title>Krittamet | xspeedx</title>
       </Helmet>
       <div className="h-1/2 justify-center items-center flex-col flex">
-        <div className="mx-10 gap-5 flex flex-col justify-center items-center p-5 shadow-purple-900 shadow-lg  rounded-xl  bg-gradient-to-tl  from-[#00c3ff] to-[#ee0979]">
+        <div className="mx-10 sm:pb-16 gap-5 flex flex-col justify-center items-center p-5 shadow-purple-900 shadow-lg  rounded-full  bg-gradient-to-tl  from-[#00c3ff] to-[#ee0979]">
           <img
             src={
               "https://scontent.furt3-1.fna.fbcdn.net/v/t1.6435-9/119243054_3284855721597160_5469155022012570276_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFJ2T-RuHpixjjLJAGFeODsKF4p2StVj6QoXinZK1WPpPSBJQ8xAq2UfUW4Y0xOyXPAI5S-3hp0kjsCjwTQZR8b&_nc_ohc=8QcO3VPVA7YAX_GwagM&tn=rdVUZayVM5IqJn91&_nc_ht=scontent.furt3-1.fna&oh=00_AT-l1jdhWi48yV83DnSbetPeiJmAFFU0j1sg-S_ClFgXqA&oe=62B5C178"
             }
-            className="h-fit max-h-64"
+            className="h-fit max-h-60 rounded-full drop-shadow-lg"
           />
           <div className=" gap-2 flex flex-col text-white font-semibold text-center font-mono text-xs sm:text-lg drop-shadow-md">
             <p>Krittamet Petchkor</p>
