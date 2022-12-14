@@ -34,9 +34,13 @@ function App() {
   return (
     <div className="App">
       <Helmet>
+        <meta charSet="utf-8" />
         <title>Krittamet | xspeedx</title>
+        <meta name="description" content="Full stack Developer @ Finstable" />
         <meta name="keywords" content={keywords.join(",")} />
+        <meta name="author" content="xspeedx,krittamet" />
       </Helmet>
+
       <div className=" relative min-h-screen justify-center items-center overflow-hidden py-6 sm:py-12 px-5 flex flex-col bg-[#272348] bg-cover bg-center">
         <div className="h-1/2 justify-center items-center flex-col flex">
           <div className="mx-10 px-20 sm:pb-16 gap-5 flex flex-col justify-center items-center p-5 shadow-purple-900 shadow-lg  rounded-full  bg-gradient-to-tl  from-[#00c3ff] to-[#ee0979]">
