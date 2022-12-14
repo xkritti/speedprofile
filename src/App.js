@@ -84,9 +84,9 @@ function App() {
                 on Blockchain and DeFi projects.
               </p>
             </div>
-            <div className="flex flex-row justify-center items-center gap-5 text-white">
+            <div className="flex flex-row justify-center items-center gap-2 text-white">
               <a
-                href="https://www.instagram.com/xspeedx_/"
+                href="https://www.instagram.com/xkrit.ti/"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#2a5298]"
@@ -94,7 +94,7 @@ function App() {
                 <FaInstagram className="text-3xl" />
               </a>
               <a
-                href="https://www.linkedin.com/in/krittamet-petchkor-0b1b1b1b9/"
+                href="https://www.linkedin.com/in/krittamet"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#2a5298]"
@@ -102,7 +102,7 @@ function App() {
                 <FaLinkedin className="text-3xl" />
               </a>
               <a
-                href="https://www.facebook.com/krittamet.petchkor/"
+                href="https://www.facebook.com/krittamet.petchkho/"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#2a5298]"
@@ -110,7 +110,7 @@ function App() {
                 <FaFacebookSquare className="text-3xl" />
               </a>
               <a
-                href="github.com/xspeedx"
+                href="https://github.com/xkritti"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#2a5298]"
