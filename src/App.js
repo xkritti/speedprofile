@@ -8,6 +8,7 @@ import {
 import { Helmet } from "react-helmet";
 import profile from "../src/assets/profile.jpg";
 import { useState } from "react";
+import axios from "axios";
 
 function App() {
   const [keywords, setKeywords] = useState([
@@ -31,6 +32,7 @@ function App() {
     "xspeedx",
     "xkritti",
   ]);
+
   return (
     <div className="App">
       <Helmet>
@@ -120,6 +122,38 @@ function App() {
             </div>
           </div>
         </div>
+        <section className="flex flex-col justify-center items-center w-full gap-5 mt-10 ">
+          <p className="text-2xl sm:text-4xl font-bold text-white font-mono">
+            # Weather
+          </p>
+
+          <button
+            className="text-white font-mono text-xs sm:text-lg"
+            onClick={async () => {
+              const res = await axios.get(
+                "https://www.tmd.go.th/api/WeatherForecast7Day/weather-forecast-7day-by-province?&FilterText=%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95&MaxResultCount=7&Culture=en-EN"
+              );
+
+              console.log(res);
+            }}
+          >
+            <a>Phuket Weather Forecast</a>
+          </button>
+
+          <div className="flex w-full gap-5 h-full">
+            <img
+              src={"https://weather.tmd.go.th/pkt/pkt240Loop.gif"}
+              alt="GIF"
+              // className="w-full h-full object-cover"
+            />
+            <iframe
+              className="flex rounded-xl w-full h-80 aspect-auto"
+              src="https://www.tmd.go.th/weatherForecast7DaysWidget?province=ภูเก็ต"
+              // scrolling="no"
+              frameborder="0"
+            />
+          </div>
+        </section>
       </div>
     </div>
   );
