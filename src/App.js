@@ -127,28 +127,23 @@ function App() {
             # Weather
           </p>
 
-          <button
-            className="text-white font-mono text-xs sm:text-lg"
-            onClick={async () => {
-              const res = await axios.get(
-                "https://www.tmd.go.th/api/WeatherForecast7Day/weather-forecast-7day-by-province?&FilterText=%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95&MaxResultCount=7&Culture=en-EN"
-              );
+          <a className="text-white font-mono text-xs sm:text-lg">
+            Phuket Weather Forecast
+          </a>
 
-              console.log(res);
-            }}
-          >
-            <a>Phuket Weather Forecast</a>
-          </button>
-
-          <div className="flex w-full gap-5 h-full">
+          <div className="flex justify-center items-center w-full gap-5 h-full flex-col-reverse">
             <img
+              className="max-w-[800px] rounded-xl"
               src={"https://weather.tmd.go.th/pkt/pkt240Loop.gif"}
               alt="GIF"
+              width={"80%"}
+              height="auto"
               // className="w-full h-full object-cover"
             />
             <iframe
-              className="flex rounded-xl w-full h-80 aspect-auto"
+              className="flex rounded-xl h-80 max-w-[800px]"
               src="https://www.tmd.go.th/weatherForecast7DaysWidget?province=ภูเก็ต"
+              width={"80%"}
               // scrolling="no"
               frameborder="0"
             />
